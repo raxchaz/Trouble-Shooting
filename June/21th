@@ -1,0 +1,43 @@
+```　
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Spring Request Mapping 테스트</h1>
+<h2>1. 메소드에 요청 매핑하기</h2>
+<h3>GET : /menu/regist</h3>
+<button onclick="location.href='/menu/regist'">GET 메뉴 등록 요청</button>
+</body>
+</html>
+```　
+
+===============================================================================================
+
+```　
+package com.ohgiraffers.requestMapping;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class MethodMappingTestController {
+
+    @RequestMapping("/menu/regist")
+    public String registMenu(Model model){
+        // Model model = 실제 객체가 아닌, Model이 가지고 있는 주솟값을 가지고오는 것!
+
+//        model.addAllAttributes("message", "신규 메뉴 등록용 핸들러메소드 호출.."); 오타 잘 보세요 -
+        model.addAttribute("message", "신규 메뉴 등록용 핸들러메소드 호출..");
+
+
+        return "mappingResult";
+    }
+}
+```　
+
+
+Run 했을 경우, 404 Not Found 표시!
