@@ -8,3 +8,13 @@ Spring Boot 어플리케이션이 요청된 URl에 대해 명시적인 핸들러
 
 +) ErrorController를 구현하거나 application.properties 파일에 
    server.error.whitelabel.enabled=false를 추가
+
+----
+
+NotFound : 404
+ㄴ 가장 일반적인 원인은 요청한 URL 경로와 매핑된 핸들러가 없는 경우
+
+01. URL과 컨트롤러/핸들러 메서드 매핑
+02. 컨트롤러 클래스 위치 확인
+03. 서버 포트
+    ㄴ application.properties 파일에서 server.port 프로퍼티를 확인하여 애플리케이션이 실행 중인 포트가 정확한지 확인
