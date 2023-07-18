@@ -1,0 +1,4 @@
+
+Annotation 정리!
+
+@MappedSuperclass // 테이블로 매핑하지 않고, 자식 Entity에게 매핑 정보를 상속한다.
