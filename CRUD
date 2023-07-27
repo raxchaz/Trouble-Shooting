@@ -87,3 +87,6 @@ java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+
+
+스프링 애플리케이션 컨텍스트를 로드하는 동안 발생한 문제로, 애플리케이션 컨텍스트를 생성할 수 없어서 발생
