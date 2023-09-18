@@ -1,2 +1,4 @@
-# Error-Board
+# ⚠️ ERROR BOARD
+
+<br>
 
